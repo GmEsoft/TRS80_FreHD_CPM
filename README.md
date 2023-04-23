@@ -1,11 +1,13 @@
-Procedure to build a FreHD CP/M bootable system
-===============================================
+Procedure to build a FreHD CP/M bootable system on TRS-80 Model 4/4p
+====================================================================
 
 SYSGENing Montezuma Micro CP/M 2.2 BIOS 2.22+ to a hard disk
 ------------------------------------------------------------
 
 ### Needed
 
+- a TRS-80 Model 4/4p;
+- a 15 MB Radio-Shack Hard Disk or a FrehD emulator;
 - a bootable Montezuma Micro CP/M 2.2 floppy, with bios 2.22 or 2.3x;
 - a disk containing the Hard Disk support files for CP/M (MMHARD);
 - a disk containing the FreHD tools (VHDUTL.COM, IMPORT2.COM, EXPORT2.COM).
@@ -131,6 +133,10 @@ SYSGENing Montezuma Micro CP/M 2.2 BIOS 2.22+ to a hard disk
 	```
 
 18.	Press RESET (on 4p, don't press 2/F2 to boot from HD)
+	- The system should now boot on the hard disk on the
+	model 4p (without the modified boot ROM). With modified 
+	boot ROMs it may not succeed, as the 'bootable' flag
+	was not set while creating the disk image. See step 22.
 
 19.	Mount the CP/M System Disk in drive E: (floppy A:)
 	- Copy all files from it to the new hard disk.
